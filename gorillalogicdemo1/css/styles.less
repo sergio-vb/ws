@@ -1,0 +1,121 @@
+.hide{
+	display:none;
+}
+
+@pop-over-border-radius: 5px;
+
+.pop-over-container{
+	
+	background: #ebebeb;
+    border-radius: @pop-over-border-radius;
+    border: 1px solid #000;
+    width: 34em;
+    height: 13em;
+    margin: auto;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+	.pop-over-title{
+		background: #000;
+		color: #fff;
+		border-radius: 4px;
+		margin: 0;
+		padding: 0 0 0 0.5em;
+		font-size: 1em;
+	}
+
+	.close{
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: #fff;
+		font-weight: bold;
+		line-height: 1em;
+		margin: 0.2em 0.3em 0 0;
+		cursor: pointer;
+	}
+
+	.inner-container{
+
+		border-radius: @pop-over-border-radius;
+		background: #fff;
+		border: 1px solid #000;
+		margin: 0.8em 1.4em 1.1em;
+		text-align: center;
+
+		.progress-area{
+			margin: 1em 0 0 3.8em;
+		}
+
+		h3, .progress-bar-container, .target{
+			float: left;
+		}
+
+		h3{
+			color: #797979;
+			font-size: 1em;
+			margin: 1em 0.5em 0 0;
+		}
+
+		.progress-bar-container{
+			
+			background: #f8f8f8;
+		    width: 14em;
+		    height: 0.8em;
+		    border-radius: 2px;
+		    margin-top: 1.35em;
+		    border-top: 1px solid #eaeaea;
+
+
+		    .filled-portion{
+
+				width: 0;
+				background: #62B757;
+				height: 100%;
+				border-radius: 2px;
+				position: relative;
+
+				.progress-indicator{
+					position: absolute;
+					bottom: -0.8em;
+					background: url("../img/indicator-arrow.png") no-repeat top right;
+					right: -6px; //Half of the size of the background image's width.
+					width: 13px;
+					height: 8px;
+				}
+
+				.current-progress{
+					position: absolute;
+					right: -0.7em;
+					bottom: -2.4em;
+				}
+
+		    } //.filled-portion
+
+		} //.progress-bar-container
+
+		.target{
+			background: #929292;
+			color: #fff;
+			border: 1px solid #000;
+			width: 3em;
+			padding: 0.1em 0.3em;
+			text-align: center;
+		}
+
+		.message{
+			color: #797979;
+			text-align: center;
+			background: url("../img/info_icon.png") no-repeat left center;
+			padding: 0 0 0 21px;
+			display: inline-block;
+			margin-top: 2em;
+		}
+
+	} //.inner-container
+	
+} //.pop-over-container

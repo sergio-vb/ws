@@ -1,0 +1,25 @@
+Notes:
+
+Questions:
+
+- Should the demo follow the exact styling in your image? How much flexibility would we have regarding that?
+- Should the demo open the pop over immediately when loading the page, or should it have a main page with the link to open the pop over?
+- If it's the second case, do you have any requirements in functionality or styling for this main page?
+- In your description there is no mention of how the user can close the pop over window. We could use an X in the corner of the window to close it, or just close it by clicking anywhere outside the pop over. Which one would you prefer?
+- Should we account for the pop over window to have customized text below the progress bar or any sort of additional content?
+- In case the user reached their goal, should it show an alternate message?
+- What's the max number of digits expected for the values?
+- Regarding the indicator that displays the current value at the end of the "filled" portion of the progress bar, should it move sideways as the bar is filling, or is it enough to display the value when the bar finishes loading?
+- Should the pop over window have a fixed width, or would it be proportional to the current window?
+
+- Regarding technical requirements, can the demo incorporate standard templates and libraries such as boilerplate or Jquery?
+
+
+I had to make the following decisions to finish the demo, mostly related to the questions previously mentioned:
+- I followed the design provided as much as possible, but with a certain flexibility, it's not pixel perfect.
+- I assumed that it would be better for the demo to have a main page, so the link to open it can be tested. For the design and layout of the main page I used a standard template with basic information that serves to introduce the demo. I added two paragraphs with dummy text "lorem ipsum" to illustrate how the pop over would display over any content in the main page.
+- I decided that it would be important for the demo to have some way to close the pop over, therefore I added an x at the top right corner of the pop over. I didn't implement the functionality to close it by clicking anywhere outside since this wasn't requested and it would've taken more development time, and it's not critical for a preliminary demo. The pop over can be opened again by clicking on the link.
+- I optimized the demo to work with 2 or 3 digits quantities, regarding the position of the numbers.
+- I decided that the current value indicator would be displayed after the bar finishes loading.
+- For this version of the demo, the pop over has a fixed width, but if requested it could be made more responsive, to adapt to the window's width.
+- Since there were no restrictions mentioned regarding development tools or libraries, I used a html5 Boilerplate template to quickly generate the starting files for the demo, and then I implemented the javascript functionality taking advantage of the Jquery library. I also used Less for the souce css styling, and compiled that to generate the actual .css styles.
