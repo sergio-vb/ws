@@ -2192,12 +2192,13 @@ img[height] {
   }
 }
 
-.c-intro p {
+.c-intro p, .c-intro ul {
   margin-bottom: 1.1rem;
+  margin-left: 0;
 }
 
 @media (min-width: 600px) {
-  .c-intro p {
+  .c-intro p, .c-intro ul {
     font-size: 1.22rem;
     margin-bottom: 1.375rem;
   }
