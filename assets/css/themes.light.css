@@ -82,7 +82,7 @@ hr,
 }
 
 .t-title__second-word {
-  color: #cc0000;
+  color: #cc0000; /*#.2f84ce #.cc0000 */
 }
 
 .t-sub-title {
@@ -101,7 +101,7 @@ hr,
 }
 
 .t-title__second-word {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
 }
 
