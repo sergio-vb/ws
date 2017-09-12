@@ -1,0 +1,18 @@
+/*==========================================
+                    Timeline
+============================================*/
+.timeline-block .card-content .modal-dot {
+    font-size: 17px;
+    margin-top: 0.5em;
+    display: block;
+}
+/*==========================================
+                    Modals
+============================================*/
+.modal-body ul{
+    margin-left: 1.5em;
+}
+.modal-body ul li{
+    list-style-type: disc;
+    margin-bottom: 0.4em;
+}
