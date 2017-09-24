@@ -1339,7 +1339,7 @@ body.scale-effect .btn-holder .btn-play {
     transition: transform 0.35s, color 0.35s;
     -webkit-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0); }
-#portfolios #portfolios-card .tab-content figure.port-effect-scale p {
+#portfolios #portfolios-card .tab-content figure.port-effect-scale .content {
     /*caption paragraph*/
     position: absolute;
     bottom: 0;
@@ -1348,10 +1348,25 @@ body.scale-effect .btn-holder .btn-play {
     width: 100%;
     opacity: 0;
     color: #fff;
+    background: rgba(0,0,0,0.7);
     -webkit-transition: opacity 0.60s, -webkit-transform 0.60s;
     transition: opacity 0.60s, transform 0.60s;
     -webkit-transform: scale(0);
-    transform: scale(0); }
+    transform: scale(0); 
+
+    /* SV Modifications */
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 56.5%;
+    text-align: left;
+}
+#portfolios #portfolios-card .tab-content figure.port-effect-scale .content p{
+    color: inherit;
+    font-size: 100%;
+}
+#portfolios #portfolios-card .tab-content figure.port-effect-scale .content li{
+    list-style: square;
+}
 #portfolios #portfolios-card .tab-content figure.port-effect-scale:hover {
     /*hover effect*/ }
 #portfolios #portfolios-card .tab-content figure.port-effect-scale:hover h2 {
@@ -1362,7 +1377,7 @@ body.scale-effect .btn-holder .btn-play {
 #portfolios #portfolios-card .tab-content figure.port-effect-scale:hover figcaption::before {
     opacity: 1;
     background: rgba(0, 0, 0, 0.7); }
-#portfolios #portfolios-card .tab-content figure.port-effect-scale:hover p {
+#portfolios #portfolios-card .tab-content figure.port-effect-scale:hover .content {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1); }
