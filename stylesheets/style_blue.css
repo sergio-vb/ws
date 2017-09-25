@@ -1360,12 +1360,19 @@ body.scale-effect .btn-holder .btn-play {
     font-size: 56.5%;
     text-align: left;
 }
+/* SV Modifications */
 #portfolios #portfolios-card .tab-content figure.port-effect-scale .content p{
     color: inherit;
-    font-size: 100%;
+    font-size: 1.2em;
+    margin: 0 0 0.5em;
 }
+/* SV Modifications */
 #portfolios #portfolios-card .tab-content figure.port-effect-scale .content li{
     list-style: square;
+    margin-left: 1em;
+    line-height: 1.6em;
+    text-transform: none;
+    font-size: 1.2em;
 }
 #portfolios #portfolios-card .tab-content figure.port-effect-scale:hover {
     /*hover effect*/ }
