@@ -1358,6 +1358,8 @@ body.scale-effect .btn-holder .btn-play {
     margin: 0;
     letter-spacing: 1px;
     font-size: 56.5%;
+}
+#portfolios #portfolios-card .tab-content figure.port-effect-scale .content.left{
     text-align: left;
 }
 /* SV Modifications */
